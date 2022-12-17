@@ -18,3 +18,12 @@ Enter the bootloader in 3 ways:
 * **Bootmagic reset**: Hold down the top left key on the left half, or top right key on the right half, and then plug in the USB cable on that keyboard half.
 * **Physical reset button**: In order to put the board in bootloader mode, press briefly the RESET button (marked R) while holding the BOOT button (the second one). If the buttons are not reachable (soldered upside down), the /RST pad can be shorted to GND, while the two smaller BOOT pads (next to D8) are maintained shorted.
 * **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available.
+
+### Wiring Diagram
+
+GP5  GP4  GP3
+🟩 - 🟩 - 🟩 GP29
+|    |    |
+🟩 - 🟩 - 🟩 GP28
+|    |    |
+🟩 - 🟩 - 🟩 GP27
