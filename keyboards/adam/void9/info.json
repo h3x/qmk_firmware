@@ -1,7 +1,7 @@
 {
     "keyboard_name": "Void 9",
-    "manufacturer": "Adam",
-    "url": "",
+    "manufacturer": "h3x",
+    "url": "https://github.com/h3x/qmk_firmware/tree/my-qmk/keyboards/adam/void9",
     "maintainer": "h3x",
     "processor": "RP2040",
     "bootloader": "rp2040",

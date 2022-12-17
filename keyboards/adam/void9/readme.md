@@ -1,10 +1,9 @@
-# ANAVI Macro Pad 10
+# Void 9 Macro Pad
 
-Mini hot-swappable mechanical keyboard with a clickable rotary encoder, 9 Cherry MX compatible switches, translucent key caps, USB-C, RP2040 microcontroller, backlighting and under lighting.
+A 9 button macropad based on the void 9 form factor and the splinky controller
 
-* Keyboard Maintainer: [Leon Anavi](https://github.com/leon-anavi)
-* Hardware Supported: ANAVI Macro Pad 10
-* Hardware Availability: [Crowd Supply](https://www.crowdsupply.com/anavi-technology/anavi-macro-pad-10), [GitHub repository](https://github.com/AnaviTechnology/anavi-macro-pad-10)
+* STL Files [V0id](https://www.thingiverse.com/thing:4222157)
+* Splinky controller [plut0nium](https://github.com/plut0nium/0xB2)
 
 Make example for this keyboard (after setting up your build environment):
 
@@ -17,5 +16,5 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 Enter the bootloader in 3 ways:
 
 * **Bootmagic reset**: Hold down the top left key on the left half, or top right key on the right half, and then plug in the USB cable on that keyboard half.
-* **Physical reset button**: Double tap the reset button on the XIAO RP2040.
+* **Physical reset button**: In order to put the board in bootloader mode, press briefly the RESET button (marked R) while holding the BOOT button (the second one). If the buttons are not reachable (soldered upside down), the /RST pad can be shorted to GND, while the two smaller BOOT pads (next to D8) are maintained shorted.
 * **Keycode in layout**: Press the key mapped to `QK_BOOT` if it is available.
