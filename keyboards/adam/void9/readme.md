@@ -11,6 +11,58 @@ Make example for this keyboard (after setting up your build environment):
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
+## Default Layer
+```
+Base Layer
+ ┌──────────┬──────────┬──────────┐
+ │          │          │          │
+ │ SHFT +   │ SHFT +   │ SHFT     │
+ │ CTRL + 1 │ CTRL + 2 │ CTRL + 3 │ 
+ ├──────────┼──────────┼──────────┤ 
+ │          │          │          │
+ │ SHFT +   │ SHFT +   │ SHFT +   │
+ │ CTRL + 4 │ CTRL + 5 │ CTRL + 6 │
+ ├──────────┼──────────┼──────────┤ 
+ │          │          │          │
+ │ To Layer │ SHFT +   │ To Layer │
+ │     1    │ CTRL + 7 │    2     │ 
+ └──────────┴──────────┴──────────┘ 
+
+ Layer 1   
+ ┌──────────┬──────────┬──────────┐
+ │          │          │          │
+ │  Macro 1 │ Macro 2  │          │
+ │          │          │          │ 
+ ├──────────┼──────────┼──────────┤ 
+ │          │          │          │
+ │ Notepad  │  Chrome  │ Obsidian │
+ │          │          │          │
+ ├──────────┼──────────┼──────────┤ 
+ │          │          │          │
+ │          │ Outlook  │          │
+ │          │          │          │ 
+ └──────────┴──────────┴──────────┘ 
+
+ Layer 2
+ ┌──────────┬──────────┬──────────┐
+ │          │          │          │
+ │   f20    │   f21    │   f22    │
+ │          │          │          │ 
+ ├──────────┼──────────┼──────────┤ 
+ │          │          │          │
+ │   f16    │   f17    │   f18    │
+ │          │          │          │
+ ├──────────┼──────────┼──────────┤ 
+ │          │          │          │
+ │          │   f19    │          │
+ │          │          │          │ 
+ └──────────┴──────────┴──────────┘ 
+
+ Macro 1:
+    Create a new obsidian note (ctrl-n)
+Macro 2:
+    Enter meeting template
+```
 ## Bootloader
 
 Enter the bootloader in 3 ways:

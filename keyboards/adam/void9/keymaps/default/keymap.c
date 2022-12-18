@@ -1,21 +1,67 @@
 #include QMK_KEYBOARD_H
 
+enum macros {
+    NOTEPAD = SAFE_RANGE,
+    OBSIDIAN,
+    OUTLOOK,
+    CHROME,
+    MAC1,
+    MAC2,
+    MAC3
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t* record) {
+    switch(keycode) {
+        case NOTEPAD:
+            if(record->event.pressed) {
+               SEND_STRING(SS_LGUI() SS_DELAY(200) "notepad" SS_DELAY(200) SS_TAP(X_ENTER));
+            }
+            return false;
+        case CHROME:
+            if(record->event.pressed) {
+               SEND_STRING(SS_LGUI() SS_DELAY(200) "chrome" SS_DELAY(200) SS_TAP(X_ENTER));
+            }
+            return false;
+        case OBSIDIAN:
+            if(record->event.pressed) {
+               SEND_STRING(SS_LGUI() SS_DELAY(200) "obsidian" SS_DELAY(200) SS_TAP(X_ENTER));
+            }
+            return false;
+        case OUTLOOK:
+            if(record->event.pressed) {
+               SEND_STRING(SS_LGUI() SS_DELAY(200) "outlook" SS_DELAY(200) SS_TAP(X_ENTER));
+            }
+            return false;
+        case MAC1:
+            if(record->event.pressed) {
+                SEND_STRING(SS_LCTL("n"));
+            }
+            return false;
+        case MAC2:
+            if(record->event.pressed) {
+               SEND_STRING("Meeting Date:\n\n\n\nMeeting With:\n\n\n\nMeeting About:\n\n\n\nNotes:\n\n\n\nActions:\n\n\n\n");
+            }
+            return false;
+    }
+    return true;
+};
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [0] = LAYOUT(
-        LCTL(KC_1)    , LCTL(KC_2)      , LCTL(KC_3)   ,
-	    LCTL(KC_4)    , LCTL(KC_5)      , LCTL(KC_6)   ,
-	    MO(1)         , LCTL(KC_7)      , MO(2)
+        RCS(KC_1)    , RCS(KC_2)      , RCS(KC_3)   ,
+	    RCS(KC_4)    , RCS(KC_5)      , RCS(KC_6)   ,
+	    MO(1)        , RCS(KC_7)      , MO(2)
     ),
 
     [1] = LAYOUT(
-        KC_A          , KC_B          , KC_C            ,
-        KC_D          , KC_E          , KC_F            ,
-        KC_G          , KC_H          , KC_I            
+        MAC1         , MAC2           ,   KC_NO     ,
+        NOTEPAD      , CHROME         ,   OBSIDIAN  ,
+        KC_NO        , OUTLOOK        ,   KC_NO         
     ),
 
     [2] = LAYOUT(
-        KC_1          , KC_2          , KC_3            ,
-        KC_4          , KC_5          , KC_6            ,
-        KC_7          , KC_8          , KC_9            
+        KC_F13       , KC_F14        , KC_F15       ,
+        KC_F16       , KC_F17        , KC_F18       ,
+        KC_NO        , KC_F19        , KC_NO            
     )
 };
