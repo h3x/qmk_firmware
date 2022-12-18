@@ -9,7 +9,8 @@ Make example for this keyboard (after setting up your build environment):
 
     qmk compile -kb adam/tbk -km default
 
-Customised Miryoku layout
+Customised Miryoku layout:
+
     qmk compile -kb adam/tbk -km miryoku
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
@@ -67,7 +68,7 @@ Layer 2 [ MEDIA ]
                               └─────┤     │   │STOP ├─────┘
                                     └─────┘   └─────┘
 
-Layer 3 [ Numbers ]
+Layer 3 [ NUMBERS ]
  ┌─────┬─────┬─────┬─────┬─────┬─────┐            ┌──────┬──────┬──────┬─────┬──────┬──────┐
  │     │ [ } │  1  │  2  │  3  │ ] } │            │      │      │      │     │      │      │
  ├─────┼─────┼─────┼─────┼─────┼─────┤            ├──────┼──────┼──────┼─────┼──────┼──────┤
@@ -81,7 +82,7 @@ Layer 3 [ Numbers ]
                               └─────┤  -  │   │     ├─────┘
                                     └─────┘   └─────┘
 
-Layer 4 [ Symbols ]
+Layer 4 [ SYMBOLS ]
  ┌─────┬─────┬─────┬─────┬─────┬─────┐            ┌──────┬──────┬──────┬─────┬──────┬──────┐
  │  {  │  !  │  @  │  #  │  )  │  }  │            │      │      │      │     │      │      │
  ├─────┼─────┼─────┼─────┼─────┼─────┤            ├──────┼──────┼──────┼─────┼──────┼──────┤
@@ -95,7 +96,7 @@ Layer 4 [ Symbols ]
                               └─────┤  _  │   │     ├─────┘
                                     └─────┘   └─────┘
 
-Layer 5 [ Function Row]
+Layer 5 [ FUNCTION ROW ]
  ┌─────┬─────┬─────┬─────┬─────┬─────┐            ┌──────┬──────┬──────┬─────┬──────┬──────┐
  │     │ F1  │ F2  │ F3  │ F4  │PR_SC│            │      │      │      │     │      │      │
  ├─────┼─────┼─────┼─────┼─────┼─────┤            ├──────┼──────┼──────┼─────┼──────┼──────┤
@@ -114,17 +115,5 @@ Layer 5 [ Function Row]
 
 
 # Wiring Diagram 
-```
- ┌───┬───┬───┬───┬───┬───┐       ┌───┬───┬───┬───┬───┬───┐
- │   │   │   │   │   │   │       │   │   │   │   │   │   │
- ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
- │   │   │   │   │   │   │       │   │   │   │   │   │   │
- ├───┼───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┼───┤
- │   │   │   │   │   │   │       │   │   │   │   │   │   │
- └───┴───┴───┴───┴───┴───┘       └───┴───┴───┴───┴───┴───┘
-               ┌───┐                   ┌───┐
-               │   ├───┐           ┌───┤   │
-               └───┤   ├───┐   ┌───┤   ├───┘
-                   └───┤   │   │   ├───┘
-                       └───┘   └───┘
-```
+
+![Wiring Diagram](images/wiring-guide.png)
