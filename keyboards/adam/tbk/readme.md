@@ -116,4 +116,4 @@ Layer 5 [ FUNCTION ROW ]
 
 # Wiring Diagram 
 
-![Wiring Diagram](images/wiring-guide.png)
+![Wiring Diagram](images/wiring-guide-2.png)
