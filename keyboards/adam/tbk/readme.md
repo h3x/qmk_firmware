@@ -117,3 +117,6 @@ Layer 5 [ FUNCTION ROW ]
 # Wiring Diagram 
 
 ![Wiring Diagram](images/wiring-guide-2.png)
+
+# Splinky Pinout
+![Splinky Pinout](https://i.imgur.com/1TPAhrs.jpg)
