@@ -27,7 +27,7 @@
 #define MATRIX_ROW_PINS { GP2, GP3, GP4, GP5 }
 
 #define DEBOUNCE 5
-#define SOFT_SERIAL_PIN GP6
-#define MASTER_LEFT
+#define SOFT_SERIAL_PIN GP1
+// #define MASTER_LEFT
 // #define MASTER_RIGHT
-// #define EE_HANDS
+#define EE_HANDS
